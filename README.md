@@ -16,7 +16,7 @@ Para importar a Twtlib, utilize o seguinte comando:
 
 Assim que instanciar a classe Twitter, passe suas credenciais no construtor, caso contrário, não irá funcionar.<br>
 
-> Ex:<br>Test = Twtlib(API_KEY, API_SECRET, TOKEN_KEY, TOKEN_SECRET)
+> Ex:<br>test = Twtlib(API_KEY, API_SECRET, TOKEN_KEY, TOKEN_SECRET)
 
 <hr>
 
