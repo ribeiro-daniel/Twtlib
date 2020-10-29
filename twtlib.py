@@ -14,9 +14,9 @@ class Twtlib:
         token = oauth2.Token(self.token_key, self.token_secret)
         self.client = oauth2.Client(consumer, token)
 
-    def buscar(self, query):
+    def buscar(self, query, lang):
         query_codificada = urllib.parse.quote(query, safe='')
-        req = self.client.request('https://api.twitter.com/1.1/search/tweets.json?q=' + query_codificada)
+        req = self.client.request('https://api.twitter.com/1.1/search/tweets.json?q=' + query_codificada + '&lang=' + lang)
         decode = req[1].decode()
         resp = json.loads(decode)
         tweets = resp['statuses']
