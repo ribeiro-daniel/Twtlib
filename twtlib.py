@@ -3,7 +3,7 @@ import urllib.parse
 import json
 
 
-class Twitter:
+class Twtlib:
     def __init__(self, api_key, api_secret, token_key, token_secret):
         self.api_key = api_key
         self.api_secret = api_secret
