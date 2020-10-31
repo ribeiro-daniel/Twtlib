@@ -1,40 +1,26 @@
-# Twtlib
-### (pt) Lib para buscar/postar no Twitter
-### (en) Lib to search/post on Twitter
-By Daniel Ribeiro | <a href="https://github.com/ribeiro-daniel">github/ribeiro-daniel</a>
-<hr>
+## Twtlib - Lib to search and post on Twitter
+## by Daniel Ribeiro
 
-> ## Documentação/Documentation:
+> Aviso:
+- (en) To use this lib, you will need to have one: API_KEY, API_SECRET, TOKEN_KEY and TOKEN_SECRET, available from Twitter itself (developer.twitter.com)
 
-**(pt) Atenção! Para utilizar a Twtlib, você precisará de uma API_KEY, API_SECRET, TOKEN_KEY e TOKEN_SECRET disponibilizadas pelo próprio Twitter.**
+- (pt) Para usar esta lib, será necessário possuir uma: API_KEY, API_SECRET, TOKEN_KEY e TOKEN_SECRET, disponibilizadas pelo próprio Twitter (developer.twitter.com)
 
-<hr>
+> Install:
 
-Para importar a Twtlib, utilize o seguinte comando:
+- pip install twtlib==1.0.0
 
-> from twtlib import Twtlib
+> Import:
 
-<hr>
+- from twtlib import Twtlib
 
-Assim que instanciar a classe Twitter, passe suas credenciais no construtor, caso contrário, não irá funcionar.<br>
+> Methods:
 
-> Ex:<br>test = Twtlib(API_KEY, API_SECRET, TOKEN_KEY, TOKEN_SECRET)
+- test = Twtlib(API_KEY, API_SECRET, TOKEN_KEY, TOKEN_SECRET) # put your credentials here
 
-<hr>
-
-> ## Métodos/Methods:
-- postar(string)
-- buscar(string, lang)
-
-  Para resultados em Português Brasileiro, defina lang: 'pt'<br>
-  For results in english, set lang: 'en'
-  
- <hr>
+- test.buscar('keyword or #hashtags', 'lang') # example: test.buscar('Hello, world', 'en')
+- test.postar('Anything') # example: test.postar('Hello, world!')
 
 
 
-Bibliotecas utilizadas na Twtlib:
 
-- oauth2
-- json
-- urllib . parse
