@@ -15,7 +15,11 @@
 - from twtlib import Twtlib
 
 > Methods:
+- Twtlib()
+- buscar()
+- postar()
 
+> Examples:
 - test = Twtlib(API_KEY, API_SECRET, TOKEN_KEY, TOKEN_SECRET) # put your credentials here
 
 - test.buscar('keyword or #hashtags', 'lang') # example: test.buscar('Hello, world', 'en')
