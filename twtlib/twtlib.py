@@ -2,7 +2,6 @@ import oauth2
 import urllib.parse
 import json
 
-
 class Twtlib:
     def __init__(self, api_key, api_secret, token_key, token_secret):
         self.api_key = api_key
@@ -16,7 +15,8 @@ class Twtlib:
 
     def buscar(self, query, lang):
         query_codificada = urllib.parse.quote(query, safe='')
-        req = self.client.request('https://api.twitter.com/1.1/search/tweets.json?q=' + query_codificada + '&lang=' + lang)
+        req = self.client.request(
+            'https://api.twitter.com/1.1/search/tweets.json?q=' + query_codificada + '&lang=' + lang)
         decode = req[1].decode()
         resp = json.loads(decode)
         tweets = resp['statuses']
@@ -33,6 +33,6 @@ class Twtlib:
                                       method='POST')
             decode = req[1].decode()
             resp = json.loads(decode)
-            print("Postado com sucesso! ")
+            print("Success! ")
         except:
-            print("Algo deu errado. ")
+            print("Error. ")
