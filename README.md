@@ -1,5 +1,4 @@
 ## Twtlib - Lib to search and post on Twitter
-## by Daniel Ribeiro
 
 > Aviso:
 - (en) To use this lib, you will need to have one: API_KEY, API_SECRET, TOKEN_KEY and TOKEN_SECRET, available from Twitter itself (developer.twitter.com)
